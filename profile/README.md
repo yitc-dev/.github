@@ -2,6 +2,10 @@
 
 ## Releases
 
+**v2.0.2** — released 2026-09-10. The installed engine is now executable: `release install`
+carries the verified tree's file modes through, so `<into>/bin/yitc-v2` runs directly after an
+install instead of failing with Permission denied. This is the update target for the trial host.
+
 **v2.0.1** — released 2026-09-10. Clean-machine install fixes: the executable bit now
 survives publishing, `release verify` no longer needs a yitc session, and the digest covers
 the tracked release tree — so a fresh clone verifies, runs and installs on a machine that has
