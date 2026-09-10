@@ -2,6 +2,11 @@
 
 ## Releases
 
+**v2.0.1** — released 2026-09-10. Clean-machine install fixes: the executable bit now
+survives publishing, `release verify` no longer needs a yitc session, and the digest covers
+the tracked release tree — so a fresh clone verifies, runs and installs on a machine that has
+never seen yitc.
+
 **v2.0.0** — released 2026-09-05.
 
 ### Trust anchor
