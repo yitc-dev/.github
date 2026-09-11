@@ -2,16 +2,9 @@
 
 ## Releases
 
-**v2.0.2** — released 2026-09-10. The installed engine is now executable: `release install`
-carries the verified tree's file modes through, so `<into>/bin/yitc-v2` runs directly after an
-install instead of failing with Permission denied. This is the update target for the trial host.
-
-**v2.0.1** — released 2026-09-10. Clean-machine install fixes: the executable bit now
-survives publishing, `release verify` no longer needs a yitc session, and the digest covers
-the tracked release tree — so a fresh clone verifies, runs and installs on a machine that has
-never seen yitc.
-
-**v2.0.0** — released 2026-09-05.
+**v2.0.3** — released 2026-09-11. The mirror was republished as a single clean lineage: this is
+the only release on it (earlier tags were retired). Signed; verify against the trust anchor
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
 
 ### Trust anchor
 
