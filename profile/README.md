@@ -39,3 +39,9 @@ order at `<target-dir>/onboarding/bootstrap-order.md` — prerequisites and thei
 `init`, the `yitc-ops.yaml` kernel pin, the external-auditor install and binding, and the first
 session. You install your AI tool, open it, point it at this page and say «install»; it reads that
 order and drives the rest with your agreement.
+
+The external auditor is recommended, not required: work runs from day one on the one AI provider
+you already have, a second, different provider is recommended because it catches the first one's
+blind spots, every audit that ran on the same provider is stamped as such, a reminder prints at each
+session start until one is bound, and binding is a few `config set auditor.<tier>.*` lines in one
+machine-settings file outside the engine tree.
