@@ -16,7 +16,17 @@ for itself:
 SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY
 ```
 
-Pin it by hand at first install and verify against it before anything is written.
+Pin it at first install and verify against it before anything is written.
+
+**In plain words, if you are not sure what this is.** The anchor fingerprint is a public `SHA256:…`
+line that lets your AI check the release was not tampered with: it is not a secret, not a password
+and not an account — you need no key and no login, because this repository is public. You do not
+have to understand it or keep it safe. Either copy the one line above and hand it to your AI, or
+simply hand your AI the link to the mirror — its README names this page, and the AI comes here for
+the line itself, shows you this page's address and the exact line it took, and asks you to confirm
+one thing: that this is the `yitc-dev` organization page. That confirmation is the whole of your
+part. The AI must never take the anchor from the mirror it is about to check — a thing does not get
+to vouch for itself — which is why the line lives here and not there.
 
 ### Install
 
