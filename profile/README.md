@@ -2,9 +2,13 @@
 
 ## Releases
 
-**v2.0.3** — released 2026-09-11. The mirror was republished as a single clean lineage: this is
-the only release on it (earlier tags were retired). Signed; verify against the trust anchor
+**v2.0.4** — released 2026-09-13. Adopter docs (overview, troubleshooting and updates),
+`release check` / `release update`, the corrected LICENSE holder and a «What changed» section in
+the release notes. Signed; verify against the trust anchor
 `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
+**v2.0.3** — released 2026-09-11. The mirror was republished as a single clean lineage: this is
+the first release on it (earlier tags were retired). Signed; verify against the same trust anchor.
 
 ### Trust anchor
 
