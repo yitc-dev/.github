@@ -54,6 +54,24 @@ one thing: that this is the `yitc-dev` organization page. That confirmation is t
 part. The AI must never take the anchor from the mirror it is about to check — a thing does not get
 to vouch for itself — which is why the line lives here and not there.
 
+### Before the install — from root to an ordinary user
+
+If you are logged in as **root** (the all-powerful machine account), your AI does this FIRST, before
+it clones or runs anything from the mirror. These steps come from HERE, not from the mirror, and they
+are ordinary account set-up done with the machine's own standard tools:
+
+1. Create an ordinary working user (with the name you choose).
+2. Keep recovery access: root, or your current way in, stays usable until the new login is proven —
+   never lock yourself out.
+3. Set up SSH (the remote-login key) for that user, copying the key you already log in with.
+4. **PROVE a second login before leaving root:** open a NEW connection as the working user while the
+   root session is still open, and check that it works. Only then does root step aside.
+5. In that new window, start your AI tool and paste ONE line — the link to this page and the word
+   «install». There is no hand-off file: that one line is the whole hand-off.
+
+The mirror is cloned, verified and installed only by that working user, never as root. If you are
+already an ordinary user, skip this.
+
 ### Install
 
 ```
