@@ -1,5 +1,27 @@
 # yitc
 
+## What you get and what you need
+
+**What you get.** An AI that works on your project the way a careful developer would: it plans each
+change, has it checked, tests it, and keeps a written record of what it did and why. You say what
+you want in your own words; the AI does the typing.
+
+**What you need.**
+- **A server** — a rented Linux machine is enough.
+- **One AI tool with its account.** Either a subscription (a fixed monthly price) or usage-based
+  billing (you pay for what you use). Either works.
+
+**Who does the work.** Project work runs as an **ordinary user** on the server. The all-powerful
+administrator account (root) is needed only for the first few minutes of setup, and not after.
+
+**Coming back next time.** Log in to the server and open your AI tool. Opened in your home folder,
+it lists your projects and you pick one; opened inside a project folder, it starts that project by
+itself. The one phrase to remember is **"start the project"**.
+
+**An optional second AI provider.** You can start with just the one AI tool. Adding a second,
+different AI provider as an auditor is recommended: it checks the first one's work and catches the
+blind spots the first one cannot see in itself.
+
 ## Releases
 
 **v2.0.4** — released 2026-09-13. Adopter docs (overview, troubleshooting and updates),
