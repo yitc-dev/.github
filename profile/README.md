@@ -24,10 +24,15 @@ blind spots the first one cannot see in itself.
 
 ## Releases
 
+**v2.0.5** — released 2026-09-27. The adopter-report fixes and the newcomer path: `-C init` works on a
+published install, a pre-publish install+init smoke, a plain start line and project picker, and an
+issue template for reports. Signed; verify against the trust anchor
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.0.4** — released 2026-09-13. Adopter docs (overview, troubleshooting and updates),
 `release check` / `release update`, the corrected LICENSE holder and a «What changed» section in
-the release notes. Signed; verify against the trust anchor
-`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+the release notes. Signed; verify against
+the same trust anchor.
 
 **v2.0.3** — released 2026-09-11. The mirror was republished as a single clean lineage: this is
 the first release on it (earlier tags were retired). Signed; verify against the same trust anchor.
