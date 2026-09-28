@@ -81,6 +81,40 @@ are ordinary account set-up done with the machine's own standard tools:
 The mirror is cloned, verified and installed only by that working user, never as root. If you are
 already an ordinary user, skip this.
 
+### Before you install — four things to know
+
+Your AI says these to you, in your language, before it clones or installs anything:
+
+- **What it is.** A way of working in which the AI does the work in small, checked, recorded steps, so
+  you can always see what was done and why.
+- **What it costs.** Your own AI tool's subscription or usage-based billing — nothing else is sold here.
+  Every check the AI runs uses your AI tool too, so this is slower and uses more of your plan than a bare
+  AI agent, in exchange for work that is checked and remembered.
+- **How you come back next time.** Log in and open your AI tool in your home folder (it lists your
+  projects) or in a project folder (it starts that project). The one phrase to remember is
+  **"start the project"**.
+- **Why a second provider.** A second, different AI provider can later check the first one's work,
+  because each misses things the other catches. Recommended, never required — work runs from day one on
+  the one AI tool you already have.
+
+### Prerequisites — checked before the install
+
+Your AI checks each of these as the working user and installs only what is missing, with your agreement:
+
+| what | check | if missing |
+| --- | --- | --- |
+| `git` | `git --version` | Debian/Ubuntu `sudo apt install git` · Fedora/RHEL `sudo dnf install git` · macOS `xcode-select --install` |
+| `python3` (3.9+) | `python3 --version` | Debian/Ubuntu `sudo apt install python3` · Fedora/RHEL `sudo dnf install python3` · macOS `brew install python` |
+| `PyYAML` (YAML reader for `python3`) | `python3 -c "import yaml"` (silent when present) | Debian/Ubuntu `sudo apt install python3-yaml` · Fedora/RHEL `sudo dnf install python3-pyyaml` · macOS `python3 -m pip install --user pyyaml` |
+| `ssh-keygen -Y` (OpenSSH 8.0+, checks the signature) | `ssh-keygen -Y sign` (prints a usage error when supported) | Debian/Ubuntu `sudo apt install openssh-client` · Fedora/RHEL `sudo dnf install openssh-clients` · macOS ships it |
+
+Without `PyYAML`, `release verify` stops with a Python error instead of a verdict; without
+`ssh-keygen -Y` there is no signature check at all.
+
+**Where things go.** By default the clone lives in `~/yitc` and the engine is installed into
+`~/yitc-engine` (the `<target-dir>` below). **Keep the `~/yitc` clone** after the install — updates are
+fetched into it.
+
 ### Install
 
 ```
