@@ -95,9 +95,16 @@ Your AI says these to you, in your language, before it clones or installs anythi
 - **What it costs.** Your own AI tool's subscription or usage-based billing — nothing else is sold here.
   Every check the AI runs uses your AI tool too, so this is slower and uses more of your plan than a bare
   AI agent, in exchange for work that is checked and remembered.
-- **How you come back next time.** Log in and open your AI tool in your home folder (it lists your
-  projects) or in a project folder (it starts that project). The one phrase to remember is
-  **"start the project"**.
+- **How you come back next time.** The same five steps every time — nothing starts by itself, and the
+  home folder does not list your projects on its own:
+
+  ```text
+  1. ssh <user>@<server>        log in as your working user
+  2. tmux attach -t yitc        back into your kept terminal (after a reboot: tmux new -s yitc)
+  3. cd ~/<project>             go to the project — or stay in ~ and type /yitc-projects in step 5
+  4. <your AI tool>             start the AI tool
+  5. "start the project"        say it; the start line "working in YITC mode" must appear
+  ```
 - **Why a second provider.** A second, different AI provider can later check the first one's work,
   because each misses things the other catches. Recommended, never required — work runs from day one on
   the one AI tool you already have.
