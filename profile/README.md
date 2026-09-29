@@ -24,9 +24,14 @@ blind spots the first one cannot see in itself.
 
 ## Releases
 
+**v2.1.0** — released 2026-09-29. The fixes from the first newcomer soak run: audit verdicts,
+the auditor reserve, land floors, `task test`, card list-field edits, credential redaction, a home-folder
+project picker and the pre-install briefing. Signed; verify against the trust anchor
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.0.6** — released 2026-09-27. A `-C init` run before `session start` now names the exact
 command to run first instead of failing on an internal term. Signed; verify against the trust anchor
-`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 **v2.0.5** — released 2026-09-27. The adopter-report fixes and the newcomer path: `-C init` works on a
 published install, a pre-publish install+init smoke, a plain start line and project picker, and an
