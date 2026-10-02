@@ -22,6 +22,13 @@ itself. The one phrase to remember is **"start the project"**.
 different AI provider as an auditor is recommended: it checks the first one's work and catches the
 blind spots the first one cannot see in itself.
 
+**Two stands, when the product is iterated.** Not needed on day one. A project can keep two running
+copies besides production: the **DEV stand (ДОРАБОТКА)**, where an open spike — an experiment — is
+tried, and the **ACCEPTANCE stand (ПРИЁМКА)**, which shows landed `main` so you can click the result
+before real users do. While a spike is open, changes to what it explores go into the spike by default.
+The recommended order for finished work is card → land → ACCEPTANCE stand → production; `deploy` only
+prints advisory reminders and never blocks (SPEC-0205).
+
 ## Releases
 
 **v2.2.0** — released 2026-10-02. The first release on the re-created mirror, which holds this
