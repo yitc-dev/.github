@@ -31,11 +31,16 @@ prints advisory reminders and never blocks (SPEC-0205).
 
 ## Releases
 
-**v2.2.1** — released 2026-10-03. The re-created mirror holds this release only; earlier releases,
+**v2.2.2** — released 2026-10-03. Fixes only, made since v2.2.1 and listed in its signed release
+notes; an install of v2.2.1 updates with the steps those notes give under «Updating from the previous
+release». Signed; verify against the trust anchor
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
+**v2.2.1** — released 2026-10-03. The re-created mirror starts at this release; earlier releases,
 v2.2.0 included, are no longer published. It carries the fixes made since v2.2.0, listed in its signed
 release notes; an install of v2.2.0 updates with the steps those notes give under «Updating from the
 previous release». Signed; verify against the trust anchor
-`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 ### Trust anchor
 
