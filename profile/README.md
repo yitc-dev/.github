@@ -31,12 +31,19 @@ prints advisory reminders and never blocks (SPEC-0205).
 
 ## Releases
 
+**v2.9.0** — released 2026-10-11. Fixes and new behaviour, made since v2.8.0 and listed in its signed
+release notes — the middle digit changed, so read those notes before updating; an install of v2.8.0
+updates with the steps they give under «Updating from the previous release». A known-broken-on-main
+record of a project's verify layer is now cleared by a green land in which that layer ran the fixed
+file and passed; before this release it stayed and refused unrelated branches. Signed; verify against the
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.8.0** — released 2026-10-10. Fixes and new behaviour, made since v2.7.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.7.0
 updates with the steps they give under «Updating from the previous release». The load-sizing parameters
 (the per-verify worker ceiling, the Stage-6 concurrency, share and priority) are now machine settings a
 host sets for itself: see `config list`. Signed; verify against the
-trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 **v2.7.0** — released 2026-10-09. Fixes and new behaviour, made since v2.6.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.6.0
