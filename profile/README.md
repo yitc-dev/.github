@@ -31,10 +31,19 @@ prints advisory reminders and never blocks (SPEC-0205).
 
 ## Releases
 
+**v2.12.0** — released 2026-10-14. Fixes and new behaviour, made since v2.11.0 and listed in its signed
+release notes — the middle digit changed, so read those notes before updating; an install of v2.11.0
+updates with the steps they give under «Updating from the previous release». A project may now declare,
+on an adapter-backed verify layer, that selection and the credit after a fix decide what runs; and a
+project's root `bin/` no longer makes every verify layer run in full, and a declared audit-post
+exemption may reach a card that touches it: see the how-to «Making a layer narrow» in
+`patterns/verify-layer-adapter-protocol.md`. Signed; verify against the
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.11.0** — released 2026-10-13. Fixes and new behaviour, made since v2.10.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.10.0
 updates with the steps they give under «Updating from the previous release». Signed; verify against the
-trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 **v2.10.0** — released 2026-10-11. Fixes and new behaviour, made since v2.9.1 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.9.1
