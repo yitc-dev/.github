@@ -31,10 +31,15 @@ prints advisory reminders and never blocks (SPEC-0205).
 
 ## Releases
 
+**v2.20.0** — released 2026-10-23. Fixes and new behaviour, made since v2.19.0 and listed in its signed
+release notes — the middle digit changed, so read those notes before updating; an install of v2.19.0
+updates with the steps they give under «Updating from the previous release». Signed; verify against the
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.19.0** — released 2026-10-22. Fixes and new behaviour, made since v2.18.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.18.0
 updates with the steps they give under «Updating from the previous release». Signed; verify against the
-trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 **v2.18.0** — released 2026-10-19. Fixes and new behaviour, made since v2.17.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.17.0
