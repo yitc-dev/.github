@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A bug in the YITC kernel
+    url: https://github.com/yitc-dev/yitc/issues
+    about: Report kernel bugs on the kernel intake.
+  - name: Experience, questions, ideas, proposals
+    url: https://github.com/yitc-dev/commons/discussions
+    about: Share and discuss in the commons. Proposals to the kernel follow the order in the commons README.
+  - name: A security vulnerability
+    url: https://github.com/yitc-dev/yitc/security/advisories/new
+    about: Report it privately, never in a public issue.
