@@ -1,0 +1,20 @@
+name: Problem with the commons itself
+description: Something wrong with the commons space — a broken link, a misfiled post, a rule that does not work.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a kernel bug use the kernel intake; for a vulnerability report privately (see https://github.com/yitc-dev/.github/blob/main/SECURITY.md).
+        Any language is fine. Do not post secrets or private data.
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where (a link)
+    validations:
+      required: false
