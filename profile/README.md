@@ -14,13 +14,15 @@ you want in your own words; the AI does the typing.
 **Who does the work.** Project work runs as an **ordinary user** on the server. The all-powerful
 administrator account (root) is needed only for the first few minutes of setup, and not after.
 
-**Coming back next time.** Log in to the server and open your AI tool. Opened in your home folder,
-it lists your projects and you pick one; opened inside a project folder, it starts that project by
-itself. The one phrase to remember is **"start the project"**.
+**Coming back next time.** Log in to the server, reattach your terminal, open your AI tool in any
+folder and type **`/yitc-projects`** (in Codex: `$yitc-projects`); pick the project, and the start line
+appears. This one order is also how you start the first time and how you restart. "start the project"
+is only the fallback inside a project folder.
 
-**An optional second AI provider.** You can start with just the one AI tool. Adding a second,
-different AI provider as an auditor is recommended: it checks the first one's work and catches the
-blind spots the first one cannot see in itself.
+**A second AI provider as the auditor.** A second, different AI provider checks the first one's work
+and catches the blind spots the first one cannot see in itself — it is the norm, not an option. At
+install the AI binds an auditor before your first project's work: a different provider, or, if you say
+no to one, at least a different model of the same provider, with your answer recorded.
 
 **Two stands, when the product is iterated.** Not needed on day one. A project can keep two running
 copies besides production: the **DEV stand (ДОРАБОТКА)**, where an open spike — an experiment — is
@@ -223,22 +225,26 @@ Your AI says these to you, in your language, before it clones or installs anythi
 
 - **What it is.** A way of working in which the AI does the work in small, checked, recorded steps, so
   you can always see what was done and why.
-- **What it costs.** Your own AI tool's subscription or usage-based billing — nothing else is sold here.
-  Every check the AI runs uses your AI tool too, so this is slower and uses more of your plan than a bare
-  AI agent, in exchange for work that is checked and remembered.
-- **How you come back next time.** The same five steps every time — nothing starts by itself, and the
-  home folder does not list your projects on its own:
+- **What it costs:** your own AI subscription, nothing sold separately. Every check also runs through
+  that AI tool, so at the start the work may be slower and use more of your limit than a bare agent,
+  but in the end it saves you tokens, time and nerves.
+- **How you come back next time — and how you start and restart.** ONE order, every time — nothing
+  starts by itself, and the home folder does not list your projects on its own:
 
   ```text
   1. ssh <user>@<server>        log in as your working user
   2. tmux attach -t yitc        back into your kept terminal (after a reboot: tmux new -s yitc)
-  3. cd ~/<project>             go to the project — or stay in ~ and type /yitc-projects in step 5
-  4. <your AI tool>             start the AI tool
-  5. "start the project"        say it; the start line "working in YITC mode" must appear
+  3. <your AI tool>             open it in any folder, or clear the session already open
+  4. /yitc-projects             type the start command, then pick the project
+  5. the start line             "Working in YITC mode — project <name>." must appear
   ```
-- **Why a second provider.** A second, different AI provider can later check the first one's work,
-  because each misses things the other catches. Recommended, never required — work runs from day one on
-  the one AI tool you already have.
+
+  Steps 3 and 4 show the Claude Code form (clear with `/clear`); in Codex the start command is
+  `$yitc-projects` (clear with `/new`).
+- **Why a second provider.** A second, different AI provider checks the first one's work, because each
+  misses things the other catches. At install the AI binds one before your first project's work — a
+  different provider, or, if you say no to one, at least a different model of the same provider, with
+  your answer recorded.
 
 ### Prerequisites — checked before the install
 
@@ -280,8 +286,9 @@ order at `<target-dir>/onboarding/bootstrap-order.md` — prerequisites and thei
 session. You install your AI tool, open it, point it at this page and say «install»; it reads that
 order and drives the rest with your agreement.
 
-The external auditor is recommended, not required: work runs from day one on the one AI provider
-you already have, a second, different provider is recommended because it catches the first one's
-blind spots, every audit that ran on the same provider is stamped as such, a reminder prints at each
-session start until one is bound, and binding is a few `config set auditor.<tier>.*` lines in one
-machine-settings file outside the engine tree.
+The external auditor is an install step: the AI binds one before your first project's work — a
+second, different provider, because it catches the first one's blind spots, or, if you say no to one,
+at least a different model of the same provider, with your answer recorded. Work still runs without a
+different provider, every audit that ran on the same provider is stamped as such, and the system keeps
+asking at each session start until one is bound; binding is a few `config set auditor.<tier>.*` lines
+in one machine-settings file outside the engine tree.
