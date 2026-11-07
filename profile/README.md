@@ -2,34 +2,33 @@
 
 ## What you get and what you need
 
-**What you get.** An AI that works on your project the way a careful developer would: it plans each
+**What you get.** An AI that runs your project the way a careful developer would: it plans each
 change, has it checked, tests it, and keeps a written record of what it did and why. You say what
-you want in your own words; the AI does the typing.
+you want in your own words; the AI writes the code.
 
 **What you need.**
 - **A server** — a rented Linux machine is enough.
 - **One AI tool with its account.** Either a subscription (a fixed monthly price) or usage-based
   billing (you pay for what you use). Either works.
 
-**Who does the work.** Project work runs as an **ordinary user** on the server. The all-powerful
+**Who does the work.** All project work runs as an **ordinary user** on the server. The all-powerful
 administrator account (root) is needed only for the first few minutes of setup, and not after.
 
-**Coming back next time.** Log in to the server, reattach your terminal, open your AI tool in any
-folder and type **`/yitc-projects`** (in Codex: `$yitc-projects`); pick the project, and the start line
-appears. This one order is also how you start the first time and how you restart. "start the project"
-is only the fallback inside a project folder.
+**Coming back next time.**
+1. Log in to the server.
+2. Reattach your kept terminal.
+3. Open your AI tool in any folder and type **`/yitc-projects`** (in Codex: `$yitc-projects`).
+4. Pick the project, and the start line appears.
 
-**A second AI provider as the auditor.** A second, different AI provider checks the first one's work
-and catches the blind spots the first one cannot see in itself — it is the norm, not an option. At
-install the AI binds an auditor before your first project's work: a different provider, or, if you say
-no to one, at least a different model of the same provider, with your answer recorded.
+Nothing starts by itself. This same order is how you start the first time and how you restart; there
+is no separate start inside a project folder.
 
-**Two stands, when the product is iterated.** Not needed on day one. A project can keep two running
-copies besides production: the **DEV stand (ДОРАБОТКА)**, where an open spike — an experiment — is
-tried, and the **ACCEPTANCE stand (ПРИЁМКА)**, which shows landed `main` so you can click the result
-before real users do. While a spike is open, changes to what it explores go into the spike by default.
-The recommended order for finished work is card → land → ACCEPTANCE stand → production; `deploy` only
-prints advisory reminders and never blocks (SPEC-0205).
+**A second AI provider checks the first.** A second, different AI provider checks the first one's
+work: it catches what the first one cannot see in its own work. This is a required part, not an
+option. At install the AI binds this auditor before your first project's work: a different provider,
+or, if you say no to one, at least a different model of the same provider, with your answer recorded.
+Work still runs without a different provider, but every such check is honestly marked, and at each
+start the system reminds you to bind an auditor.
 
 ## Releases
 
@@ -229,7 +228,7 @@ are ordinary account set-up done with the machine's own standard tools:
 4. **PROVE a second login before leaving root:** open a NEW connection as the working user while the
    root session is still open, and check that it works. Only then does root step aside.
 5. In that new window, start your AI tool and paste ONE line — the link to this page and the word
-   «install». There is no hand-off file: that one line is the whole hand-off.
+   "install". There is no hand-off file: that one line is the whole hand-off.
 
 The mirror is cloned, verified and installed only by that working user, never as root. If you are
 already an ordinary user, skip this.
@@ -298,7 +297,7 @@ The anchor and the three commands above are the whole pre-trust set: take them f
 from the mirror. Once `release verify` has passed, the installed release carries the rest of the
 order at `<target-dir>/onboarding/bootstrap-order.md` — prerequisites and their check commands,
 `init`, the `yitc-ops.yaml` kernel pin, the external-auditor install and binding, and the first
-session. You install your AI tool, open it, point it at this page and say «install»; it reads that
+session. You install your AI tool, open it, point it at this page and say "install"; it reads that
 order and drives the rest with your agreement.
 
 The external auditor is an install step: the AI binds one before your first project's work — a
