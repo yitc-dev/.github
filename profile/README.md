@@ -32,10 +32,17 @@ start the system reminds you to bind an auditor.
 
 ## Releases
 
+**v2.30.0** — released 2026-11-16. Fixes and new behaviour, made since v2.29.0 and listed in its signed
+release notes — the middle digit changed, so read those notes before updating; an install of v2.29.0
+updates with the steps they give under «Updating from the previous release». Pinned installs: a
+repository whose journal is cut must run v2.30.0 or newer before any pinned worker lands there; run
+`release update` BEFORE a journal cut, never after. Signed; verify against the trust anchor
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.29.0** — released 2026-11-06. Fixes and new behaviour, made since v2.28.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.28.0
 updates with the steps they give under «Updating from the previous release». Signed; verify against the
-trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+trust anchor `SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 **v2.28.0** — released 2026-11-05. Fixes and new behaviour, made since v2.27.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.27.0
