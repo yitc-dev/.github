@@ -32,13 +32,21 @@ start the system reminds you to bind an auditor.
 
 ## Releases
 
+**v2.32.0** — released 2026-11-21. Fixes and new behaviour, made since v2.31.0 and listed in its signed
+release notes — the middle digit changed, so read those notes before updating; an install of v2.31.0
+updates with the steps they give under «Updating from the previous release». Pinned installs: on a host
+that runs several projects, heavy verify runs now start in the order they waited and only when measured
+free threads and memory allow, so a run may wait for a slot before it starts; a second audit pre or audit
+post on a task whose audit is still running is refused. Signed; verify against the trust anchor
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+
 **v2.31.0** — released 2026-11-18. Fixes and new behaviour, made since v2.30.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.30.0
 updates with the steps they give under «Updating from the previous release». Pinned installs: a
 project pinned to an older release is no longer stranded when a newer engine drains its journal, and
 session start names the mismatch; after the update a plan anchor checked against SPEC-0083 moves once,
 because its normative text changed — re-run the plan check once. Signed; verify against the trust anchor
-`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below. This is the install target.
+`SHA256:fxSmnOxwlztBxmGq5ckGI+Xg9XKMfE33WBXeCnrhikY` below.
 
 **v2.30.0** — released 2026-11-16. Fixes and new behaviour, made since v2.29.0 and listed in its signed
 release notes — the middle digit changed, so read those notes before updating; an install of v2.29.0
